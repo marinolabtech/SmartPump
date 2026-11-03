@@ -48,52 +48,63 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> October 2026</p>
+        <p><strong>Last updated:</strong> November 2026</p>
 
-        <p>This Privacy Policy describes how the application <strong>SmartPump: Fuel Prices</strong> (also known as <em>SmartPump</em>), developed by <strong>Marino Strazzullo (Marino Lab)</strong> ("the Developer"), collects, uses, and shares information when you use our service.</p>
+        <p>This Privacy Policy describes how the application <strong>SmartPump: Fuel Prices</strong> (also known as <em>SmartPump</em>), developed by <strong>Marino Strazzullo (MarinoLab)</strong> ("the Developer"), processes information when you use it.</p>
 
         <h2>1. Data Controller</h2>
-        <p><strong>Developer / Controller:</strong> Marino Strazzullo (Marino Lab)<br>
+        <p><strong>Developer / Controller:</strong> Marino Strazzullo (MarinoLab)<br>
         <strong>Contact Email:</strong> marino.strazzullo@gmail.com</p>
 
-        <h2>2. Collection and Use of Information</h2>
-        <p>The application is designed to help you find fuel stations and the best prices near you. SmartPump does not require account creation and contains no advertisements. To function properly, the application processes the following data:</p>
+        <h2>2. Independence of the App</h2>
+        <p>SmartPump is an independent app. It is NOT a government app and is not affiliated with, endorsed by or authorised by any government body, ministry or public institution in Italy, France, Spain, Austria, Portugal or any other country. Fuel prices are taken from the public sources listed in section 4 and may be out of date or inaccurate.</p>
+
+        <h2>3. Information Processed</h2>
+        <p>SmartPump requires no account, contains no advertisements and uses no analytics or crash-reporting services. The Developer operates no server that receives your data. To function, the App processes the following:</p>
         <ul>
-            <li><strong>Location Data (GPS):</strong> The App requests access to your device's geographical location to calculate the distance to fuel stations and show you the closest ones. Location is processed directly on your device and is not saved or stored by the Developer on any servers. For countries whose data comes from OpenStreetMap (see section 3), the App may send the coordinates of the search point (your current location or the center of the map area you are viewing) to the Overpass service servers solely to retrieve the list of nearby fuel stations.</li>
-            <li><strong>Data Saved on the Device:</strong> The App locally stores your preferences (fuel type, search radius, country, notifications), the last used location and map area, and downloaded station data. This data remains on your device and is deleted when you uninstall the App or clear its data from Android settings.</li>
-            <li><strong>Voluntary Donations:</strong> The App allows you to support the Developer with an optional donation via Google Play Billing. Payment is processed entirely by Google: the Developer does not receive or store your card or payment method details, and can only view purchase information made available by Google in the Play Console (such as transaction amount and date). Donations do not unlock any app features.</li>
-            <li><strong>Advertising:</strong> The App does not contain advertisements and does not use the device's advertising identifier.</li>
+            <li><strong>Location (GPS):</strong> if you grant the location permission, the App uses your device location to show nearby fuel stations and calculate distances. Your location is processed on your device. The Developer never receives it. The App does not access location in the background. See section 4 for the countries where the coordinates of your search area are sent to the data provider.</li>
+            <li><strong>Data saved on the device:</strong> your preferences (fuel type, search radius, country, theme, notifications), the last used location or map area, and downloaded station and price data. It stays on your device and is deleted when you uninstall the App or clear its data in Android settings. The App is configured so that this data is not included in Android cloud backups.</li>
+            <li><strong>Daily background update and price-drop notifications:</strong> if notifications are enabled, once a day (around 8:30, although Android may delay it) the App downloads updated prices in the background, using the last saved location or map area, and compares them on your device with the previous ones. If a price has dropped, it shows a local notification. You can disable notifications at any time in the App or in Android settings.</li>
+            <li><strong>Voluntary donations:</strong> the App lets you support the Developer with an optional donation through Google Play Billing. Payment is handled entirely by Google. The Developer does not receive your card or payment details and only sees purchase information that Google makes available in the Play Console (such as amount and date). Donations do not unlock any feature.</li>
+            <li><strong>Advertising:</strong> none. The App does not show ads and does not use the advertising identifier.</li>
         </ul>
 
-        <h2>3. Data Sources and Sharing</h2>
-        <p>We do not sell, trade, or otherwise transfer your personal or location data to external parties for commercial purposes. Station and pricing data originate from:</p>
+        <h2>4. Data Sources, Third Parties and International Transfers</h2>
+        <p>Station and price data are downloaded from the following public sources. All connections use HTTPS.</p>
         <ul>
-            <li><strong>Official Public Databases:</strong> for Italy, data from MIMIT (Ministry of Enterprises and Made in Italy); for other countries where available, official public databases of the respective countries. This data is downloaded without sending your location.</li>
-            <li><strong>OpenStreetMap:</strong> for countries without official open pricing data, station locations are retrieved from OpenStreetMap via the Overpass API service. Data is © OpenStreetMap contributors, made available under the ODbL license (<a href="https://www.openstreetmap.org/copyright" target="_blank">openstreetmap.org/copyright</a>). For these countries, displayed prices are indicative values rather than real-time individual station prices.</li>
+            <li><strong>Italy:</strong> MIMIT (Ministry of Enterprises and Made in Italy), Osservaprezzi carburanti open data. National files are downloaded; your location is not sent.</li>
+            <li><strong>Spain:</strong> Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO), fuel price service. National file; your location is not sent.</li>
+            <li><strong>Portugal:</strong> DGEG, Preços dos Combustíveis Online. National data; your location is not sent.</li>
+            <li><strong>France:</strong> data.economie.gouv.fr, "Prix des carburants en France" (Ministry of Economy). The data is requested for an area around your location or the centre of the map you are viewing, so <strong>the coordinates of that point are sent to this service</strong> together with your IP address. If you are outside France, a default area is used.</li>
+            <li><strong>Austria:</strong> E-Control, Spritpreisrechner. The data is requested for an area around your location or the centre of the map you are viewing, so <strong>the coordinates of that point are sent to E-Control</strong> together with your IP address. If you are outside Austria, a default area is used.</li>
         </ul>
-        <p>Third parties involved in the operation of the App include:</p>
+        <p>Other third parties involved in the operation of the App:</p>
         <ul>
-            <li><strong>Overpass API Server Operators</strong> (e.g., overpass-api.de, overpass.kumi.systems, overpass.private.coffee, overpass.openstreetmap.fr): they receive the search coordinates and, as with any internet request, your device's IP address. These services are managed by independent entities separate from the Developer, with their own privacy policies.</li>
-            <li><strong>Google (Google Play and Google Play Billing):</strong> for App distribution and donation processing (<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>).</li>
+            <li><strong>OpenStreetMap (map tiles):</strong> the map is based on data &copy; OpenStreetMap contributors (ODbL, <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">openstreetmap.org/copyright</a>). To draw the map, your device downloads map tiles from OpenStreetMap servers, which receive your IP address and the area you are viewing. See the <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap Foundation Privacy Policy</a>.</li>
+            <li><strong>Google (Google Play, in-app updates and Google Play Billing):</strong> for distribution, update checks and donation processing (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>).</li>
         </ul>
+        <p>These services are run by independent organisations with their own privacy policies. Some of them may process data outside your country, including outside the European Economic Area. The Developer does not sell your data or share it for commercial purposes.</p>
 
-        <h2>4. Data Retention</h2>
-        <p>The Developer does not store location data or user preferences on its own servers. Data saved on the device remains available until you uninstall the App or clear its data.</p>
+        <h2>5. Legal Basis</h2>
+        <p>Where the GDPR applies, location is processed on the basis of your consent, given through the Android permission prompt, which you can withdraw at any time in Android settings. Other processing is necessary to provide the service you request (finding stations and prices) and, for notifications, is based on your consent through the notification permission.</p>
 
-        <h2>5. User Rights</h2>
-        <p>If you reside in the European Economic Area, the United Kingdom, or Switzerland, you have the right to request access, rectification, or deletion of your personal data, and to object to its processing, within the limits provided by law. Since the Developer does not store user data on its servers, most data can be deleted directly by clearing the App data on your device. For any requests, you can write to the email address provided in the Contact section.</p>
+        <h2>6. Data Retention</h2>
+        <p>The Developer does not store location data or preferences on its own servers. Data saved on the device remains until you uninstall the App or clear its data. Retention by the third parties above is governed by their own policies.</p>
 
-        <h2>6. Data Security</h2>
-        <p>We adopt reasonable security measures to protect the information processed by the application. However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+        <h2>7. Your Rights</h2>
+        <p>If you are in the European Economic Area, the United Kingdom or Switzerland, you have the right to request access, rectification or deletion of your personal data, to restrict or object to processing, and to withdraw consent. Since the Developer does not hold your data on any server, most data can be deleted by clearing the App data on your device. You may also lodge a complaint with your data protection authority (in Italy, the Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">garanteprivacy.it</a>). For any request, write to the email address in section 10.</p>
 
-        <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy periodically. We encourage you to review this page regularly for any changes. The last updated date is indicated at the beginning of the document.</p>
+        <h2>8. Children</h2>
+        <p>The App is not directed at children under 13 and the Developer does not knowingly collect personal data from children.</p>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions or suggestions regarding our Privacy Policy or data processing, you can contact us directly at the email address: <strong>marino.strazzullo@gmail.com</strong>.</p>
+        <h2>9. Security and Changes</h2>
+        <p>Data is transmitted over encrypted connections and the Developer keeps no user database. No method of transmission or storage is 100% secure. We may update this Privacy Policy from time to time. The date of the last update is shown at the top of this page.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>For questions about this Privacy Policy or data processing, write to <strong>marino.strazzullo@gmail.com</strong>.</p>
 
         <div class="footer">
-            <p>&copy; 2026 Marino Strazzullo (Marino Lab) - All rights reserved.</p>
+            <p>&copy; 2026 Marino Strazzullo (MarinoLab) - All rights reserved.</p>
         </div>
     </div>
 </body>
